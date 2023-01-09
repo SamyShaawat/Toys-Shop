@@ -66,7 +66,7 @@ const Home = () => {
     })
   }, []);
 
-  // //console.log(products);
+
 
   const addToCartHandler = (event) => {
     event.preventDefault();
@@ -147,22 +147,6 @@ const Home = () => {
               </div>
 
 
-              {/* <div class="flex flex-col">
-        <label for="status" class="font-medium text-sm text-stone-600">Price</label>
-        <select
-          id="status"
-          class="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-300 focus:ring focus:ring-orange-200 focus:ring-opacity-50"
-        >
-           <option> -- select an option -- </option>
-          <option> less than 100$</option>
-          <option> more than 100$</option>
-
-        </select>
-      </div> */}
-
-
-
-
               <div class="flex flex-col">
                 <label for="status" class="font-medium text-sm text-stone-600">Brand</label>
 
@@ -218,8 +202,8 @@ const Home = () => {
                       id={`hiddenimage${product.id}`}
                     />
                   </div>
-                  {/* {LoginStatus ? (
-                    <> */}
+                  {LoginStatus ? (
+                    <>
                   <div>
                     <button
                       id={product.id}
@@ -234,7 +218,7 @@ const Home = () => {
                       </button>
                     </Link>
                   </div>
-                  {/* </>
+                  </>
                   ) : (
                     <>
                   <div>
@@ -254,7 +238,7 @@ const Home = () => {
                   </div>
 
                     </>
-                        )} */}
+                        )}
 
                 </div>
               </div>
