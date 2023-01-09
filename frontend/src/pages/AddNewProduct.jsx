@@ -21,7 +21,7 @@ const AddNewProduct = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    //console.log(inputs);
+
 
     axios({
       url: "http://localhost:5000/api/items/add",
