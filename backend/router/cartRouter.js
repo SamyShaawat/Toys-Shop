@@ -8,7 +8,6 @@ const authMiddleware = require("../middleware/auth")
 cartrouter.get('/',authMiddleware,async(req,res)=>{
     try{
      const cart_items=await CartItems.findAll({where:{userID:res.locals.userID},include:[{model:Item,required:false}]})
-    // const cart_items=await CartItems.findAll({where:{userID:res.locals.userID}})
         res.json(cart_items)
     }catch(err){
         console.log(err)
@@ -20,7 +19,7 @@ cartrouter.get('/',authMiddleware,async(req,res)=>{
 cartrouter.post('/add',authMiddleware,async(req,res)=>{
     try{
         const {product_id,quantity}=req.body
-        console.log(product_id)
+    
         await CartItems.create({
             userID:res.locals.userID,itemID:product_id,quantity:quantity
         })
@@ -33,15 +32,13 @@ cartrouter.post('/add',authMiddleware,async(req,res)=>{
             res.status(500)
             res.json({success:false,msg:'Something wernt wrong'})
         }
-        // if(err.errno==1062){
-        // }
+
 
     }
 })
 cartrouter.post('/remove',authMiddleware,async(req,res)=>{
     try{
         const {product_id}=req.body
-        console.log(product_id)
         await CartItems.destroy({
             where:{userID:res.locals.userID,itemID:product_id}
         })

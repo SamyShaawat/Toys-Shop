@@ -10,7 +10,7 @@ const Login = () => {
     username: "",
     password: "",
   });
-  //const navigate = useNavigate();
+  
 
 
   const onChangeHandler = (e) => {
@@ -22,8 +22,6 @@ const Login = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-
-    //console.log(inputs);
     axios
       .post(
         "http://localhost:5000/api/user/login",
@@ -31,7 +29,7 @@ const Login = () => {
         { withCredentials: true }
       )
       .then((res) => {
-        //console.log(res);
+  
 
         if (!res.data.created) {
           if (res.data.error_type === 0) {
@@ -75,7 +73,6 @@ const Login = () => {
         }
       })
       .catch((err) => {
-        //console.log(`Request error: ${err}`);
       });
   }
   return (

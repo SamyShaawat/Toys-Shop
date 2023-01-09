@@ -8,7 +8,7 @@ const ProductDetails = () => {
   const params = useParams();
   const productid = params.productid;
   const { LoginStatus } = useContext(GlobalContext);
-  // //console.log(productid);
+  
 
   const { cart, addToCart, updateCart } = useContext(GlobalContext);
 
@@ -28,15 +28,15 @@ const ProductDetails = () => {
 
       })
       .catch((error) => {
-        //console.log(error);
+      
       });
   }, [productid]);
 
   const addToCartHandler = () => {
     axios.post('http://localhost:5000/api/cart/add',{product_id:product.id,quantity:1},{withCredentials: true}    ).then(res=>{
-      //console.log(res.data)
+     
     }).catch(err=>{
-      //console.log(err)
+  
     })
     const newItem = {
       id: product.id,
@@ -50,15 +50,14 @@ const ProductDetails = () => {
     const findItem = cart.find((item) => item.id === product.id);
 
     if (findItem) {
-      ////console.log("exist");
+   
       updateCart(product.id);
-      // //console.log(cart);
+   
       return;
     }
     addToCart(newItem);
 
-    ////console.log(cart);
-    ////console.log(newItem);
+
   };
 
   return (

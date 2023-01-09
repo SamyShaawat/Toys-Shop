@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { Route, Routes, useNavigate } from "react-router-dom";
@@ -17,9 +18,9 @@ import ProductDetails from "./pages/ProductDetails";
 function App() {
   const navigate = useNavigate();
 
-  const { IsLoggedIn, LoginStatus } = useContext(GlobalContext);
+  const { IsLoggedIn} = useContext(GlobalContext);
 
-  //console.log(LoginStatus);
+ 
 
   const token = Cookie.get("jwt_token");
   useEffect(() => {
@@ -30,23 +31,20 @@ function App() {
         { withCredentials: true }
       )
       .then((res) => {
-        //console.log(res);
-        //console.log(res.data.status);
         if (!res.data.status) {
           Cookie.remove("jwt_token");
 
           IsLoggedIn(false);
         } else {
-          ////console.log(res.data);
+    
           IsLoggedIn(true);
 
-          // //console.log("console");
         }
       })
       .catch((err) => {
-        //console.log(`Request err: ${err}`);
+   
       });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [navigate]);
 
   return (

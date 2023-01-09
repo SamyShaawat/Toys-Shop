@@ -1,3 +1,5 @@
+/* eslint-disable array-callback-return */
+/* eslint-disable eqeqeq */
 import axios from "axios";
 import React, { createContext, useReducer } from "react";
 
@@ -14,12 +16,7 @@ const Reducer = (state, action) => {
         IsLoggIn: action.payload,
       };
     case "ADD_TO_CART":
-      // axios.post('http://localhost:5000/api/cart/add',{product_id:action.payload.data.id,quantity:1},{ withCredentials: true }    ).then(res=>{
-      //   //console.log(res.data)
-      // }).catch(err=>{
-      //   //console.log(err)
-      // })
-      return {
+       return {
         ...state,
         cart: [...state.cart, action.payload.data],
       };

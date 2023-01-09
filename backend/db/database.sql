@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `users`(
     PRIMARY KEY(`id`)
 );
 
-DROP TABLE `cart_items`;
+
 CREATE TABLE IF NOT EXISTS `cart_items`(
   `id` int AUTO_INCREMENT,
 	`userID` int NOT NULL,

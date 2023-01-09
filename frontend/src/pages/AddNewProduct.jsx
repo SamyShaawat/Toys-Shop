@@ -31,7 +31,7 @@ const AddNewProduct = () => {
       },
     })
       .then((res) => {
-        //console.log(res);
+      
         if (res.data.status === 0) {
           toast.error(res.data.error[0].msg, {
             position: "bottom-right",
@@ -59,7 +59,7 @@ const AddNewProduct = () => {
         }
       })
       .catch((error) => {
-        //console.log(error);
+      
       });
   };
   

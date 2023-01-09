@@ -1,14 +1,13 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useContext } from "react";
 import { GlobalContext } from "../GlobalContext/GlobalContext";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = () => {
-  //  const { cart, increaseQuantity, decreaseQuantity, removeItem } = useContext(GlobalContext);
-  const { cart,setCart,clearCart, addToCart, increaseQuantity, decreaseQuantity, removeItem } = useContext(GlobalContext);
-  // const [cart, setCart] = useState([])
+  const { cart,setCart, increaseQuantity, decreaseQuantity, removeItem } = useContext(GlobalContext);
   const showToastMessage = () => {
     toast.success('Checked Out Successfully', {
       position: toast.POSITION.TOP_RIGHT

@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 import React, { useContext,useEffect } from "react";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose} from "react-icons/ai";
@@ -32,7 +34,7 @@ const Navbar = () => {
         if (!i.item.image.startsWith('http')) {
           i.item.image = '/images/' + i.item.image
         }
-        console.log('Add')
+        
         addToCart({ ...i, ...i.item, price: Number(i.item.price) })
         return { ...i, ...i.item, price: Number(i.item.price) }
       })

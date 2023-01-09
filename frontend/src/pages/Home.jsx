@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import React, { useEffect, useState } from "react";
 import img1 from "../assets/1.jpg";
 import axios from "axios";
@@ -34,7 +35,6 @@ const Home = () => {
         setProducts(products);
       })
       .catch((error) => {
-        //console.log(error);
       });
   }
   function handleReset() {
@@ -84,21 +84,16 @@ const Home = () => {
       quantity: 1,
     };
     axios.post('http://localhost:5000/api/cart/add', { product_id: newItem.id, quantity: 1 }, { withCredentials: true }).then(res => {
-      //console.log(res.data)
     }).catch(err => {
-      //console.log(err)
     })
     const findItem = cart.find((item) => item.id === id);
 
     if (findItem) {
-      // //console.log("exist");
       updateCart(id);
-      // //console.log(cart);
       return;
     }
 
     addToCart(newItem);
-    //  //console.log(cart);
   };
 
   return (
@@ -109,7 +104,7 @@ const Home = () => {
         <div class="flex flex-col">
           <div class="bg-white p-6 rounded-xl shadow-lg">
             <div class="grid grid-cols-1 md:grid-cols-2   lg:grid-cols-4  xl:grid-cols-4 gap-20">
-              <div class="flex flex-col flex justify-around">
+              <div class="flex flex-col justify-around">
                 <label for="name" class="font-medium text-sm text-stone-600">Search</label>
                 <input
                   value={searchInput}
@@ -121,7 +116,7 @@ const Home = () => {
                   class="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-300 focus:ring focus:ring-orange-200 focus:ring-opacity-50"
                 />
               </div>
-              <div class="flex flex-col flex justify-around">
+              <div class="flex flex-col justify-around">
                 <label for="name" class="font-medium text-sm text-stone-600">Minimum Price</label>
                 <input
                   type="text"
@@ -133,7 +128,7 @@ const Home = () => {
                   class="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-300 focus:ring focus:ring-orange-200 focus:ring-opacity-50"
                 />
               </div>
-              <div class="flex flex-col flex justify-around">
+              <div class="flex flex-col justify-around">
                 <label for="name" class="font-medium text-sm text-stone-600">Maximum Price</label>
                 <input
                   value={maxPrice}
@@ -161,11 +156,11 @@ const Home = () => {
             </div>
 
             <div class="grid md:flex grid-cols-2 justify-end space-x-4 w-full mt-6">
-              <button onClick={handleReset} class="px-4 py-2 rounded-lg text-stone-50 bg-stone-400 hover:bg-stone-500 font-bold text-white shadow-lg shadow-stone-200 transition ease-in-out duration-200 translate-10">
+              <button onClick={handleReset} class="px-4 py-2 rounded-lg text-stone-50 bg-stone-400 hover:bg-stone-500 font-bold shadow-lg shadow-stone-200 transition ease-in-out duration-200 translate-10">
                 Reset
               </button>
 
-              <button onClick={handleSearch} class="px-4 py-2 rounded-lg text-orange-50 bg-orange-400 hover:bg-orange-500 font-bold text-white shadow-lg shadow-orange-200 transition ease-in-out duration-200 translate-10">
+              <button onClick={handleSearch} class="px-4 py-2 rounded-lg text-orange-50 bg-orange-400 hover:bg-orange-500 font-bold shadow-lg shadow-orange-200 transition ease-in-out duration-200 translate-10">
                 Search
               </button>
             </div>

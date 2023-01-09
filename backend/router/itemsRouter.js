@@ -64,16 +64,13 @@ itemrouter.post(
       res.json(brands.map(i=>i.brand))
     }
     catch(err){
-      console.log(err)
+    
       res.status(500)
       res.json({success:false,msg:'Internal Server Error'})
     }
   })
   itemrouter.get('/search',async (req,res)=>{
     const {query,min_price,max_price,brand}=req.query
-    console.log(query)
-    console.log(brand)
-    console.log(max_price || 99999999)
     try{
       const items=await Item.findAll({
         where: { 
@@ -94,7 +91,6 @@ itemrouter.post(
       res.json(items)
     }
     catch(err){
-      console.log(err)
       res.status(500)
       res.json({success:false,msg:'Internal Server Error'})
     }
