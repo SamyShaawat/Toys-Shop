@@ -1,5 +1,6 @@
 # Toys-Shop
-### link of the website: https://whimsical-gingersnap-d57bd6.netlify.app/
+### link of the website: https://lively-parfait-a79657.netlify.app/
+--> recommend you to open the link on firefox browser
 
 # Features of the website:
 1.	Sign up (register for new user)
