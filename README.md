@@ -14,21 +14,25 @@
 
 
 ## How to run the shop? 
-first :you need to create adatabase on your device 
-there is a file name db, you can get a database from it
-you will find in backend/models/models.js: you need to chanage the host, username, password and the name of database
-go to Backend/db/connection.js : you need to chanage the host, username, password and the name of database
+### first:
+  1. You need to create adatabase on your device 
+  2. There is a file name db, you can get a database from it
+  3. You will find in backend/models/models.js: you need to chanage the host, username, password and the name of database
+  4.Go to backend/db/connection.js : you need to chanage the host, username, password and the name of database
 over all make the changes that suitable for your device 
 
 
-1.	Second git clone (https://github.com/SamyShaawat/Toys-Shop.git) for the repo 
-2.	Open the folder frontend and write in terminal (npm install), Then npm start 
-4.	Open backend directory and write in terminal(npm install ),then (npm start )
-note that 	npm install command install  all dependencies 
+### Second:
+  1. git clone https://github.com/SamyShaawat/Toys-Shop.git
+  2. Open frontend directory and write in terminal #### npm install 
+  3. Then npm start 
+  4. Open backend directory and write in terminal #### npm install 
+  5. Then npm start 
+### Note that: npm install command install  all dependencies 
 
 
 
-link of the website: https://whimsical-gingersnap-d57bd6.netlify.app/
+## link of the website: https://whimsical-gingersnap-d57bd6.netlify.app/
 
 
 
