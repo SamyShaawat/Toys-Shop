@@ -30,7 +30,7 @@
 #### Note that: npm install command install  all dependencies and npm start to run the files of backend and frontend
 
 
-# Technologies used in the project:
+## Technologies used to build the website:
 1. React
 2. Nodejs
 3. Expressjs
