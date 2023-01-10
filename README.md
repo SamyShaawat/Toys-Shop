@@ -1,5 +1,5 @@
 # Toys-Shop
-### link of the website: https://whimsical-gingersnap-d57bd6.netlify.app
+### link of the website: https://whimsical-gingersnap-d57bd6.netlify.app/
 
 # Features of the website:
 1.	Sign up (register for new user)
@@ -30,8 +30,12 @@
 #### Note that: npm install command install  all dependencies and npm start to run the files of backend and frontend
 
 
-
-
+# Technologies used in the project:
+1. React
+2. Nodejs
+3. Expressjs
+4. My SQL
+5. Sequelize
 
 
 
