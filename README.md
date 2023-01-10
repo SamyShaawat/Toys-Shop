@@ -13,7 +13,7 @@
 
 
 
-## How to run the shop? :- 
+## How to run the shop? 
 first :you need to create adatabase on your device 
 there is a file name db, you can get a database from it
 you will find in backend/models/models.js: you need to chanage the host, username, password and the name of database
