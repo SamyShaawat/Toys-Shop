@@ -14,15 +14,15 @@
 
 # How to run the Code: 
 ### First:
-  1. You need to create a database on your device 
-  2. There is a file name database.sql, you can get a database schema from it
-  3. Go to backend/models/models.js: you need to chanage the host, username, password and the name of database
-  4. Go to backend/db/connection.js : you need to chanage the host, username, password and the name of database
-i.e:  make the changes that suitable for your device 
+  1. You need to create a database on your computer
+  2. There is a file name database.sql, you can get  database schema from it
+  3. Go to backend/models/models.js: you have to chanage the host, username, password and the name of database
+  4. Go to backend/db/connection.js : you have to chanage the host, username, password and the name of database
+  i.e:  make the changes that suitable for your database name that you created and your host name , username and password  
 
 
 ### Second:
-  1. git clone https://github.com/SamyShaawat/Toys-Shop.git
+  1. git clone https://github.com/SamyShaawat/Toys-Shop.git to install the repository
   2. Open frontend directory and write in the terminal # npm install 
   3. Then write: # npm start 
   4. Open backend directory and write in terminal # npm install 
