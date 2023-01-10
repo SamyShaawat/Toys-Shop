@@ -37,5 +37,9 @@
 4. My SQL
 5. Sequelize
 
+## websites helped us for hosting:
+1. database: https://www.freemysqlhosting.net/
+2. backend:  https://dashboard.render.com/
+3. frontend: https://www.netlify.com/
 
 
