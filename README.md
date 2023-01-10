@@ -1,5 +1,5 @@
 # Toys-Shop
-# features of the website:
+# Features of the website:
 1.	Sign up (register for new user)
 2.	Log in for the users
 3.	Search of the product name or brand and price else
@@ -10,16 +10,13 @@
 8.	Add new product with product image (url link)
 
 
-
-
-
-# How to run the shop? 
+# How to run the Code: 
 ### First:
   1. You need to create adatabase on your device 
   2. There is a file name db, you can get a database from it
   3. You will find in backend/models/models.js: you need to chanage the host, username, password and the name of database
-  4.Go to backend/db/connection.js : you need to chanage the host, username, password and the name of database
-over all make the changes that suitable for your device 
+  4. Go to backend/db/connection.js : you need to chanage the host, username, password and the name of database
+i.e:  make the changes that suitable for your device 
 
 
 ### Second:
