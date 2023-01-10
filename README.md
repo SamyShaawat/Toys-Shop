@@ -1,4 +1,6 @@
 # Toys-Shop
+### link of the website: https://whimsical-gingersnap-d57bd6.netlify.app/
+
 # Features of the website:
 1.	Sign up (register for new user)
 2.	Log in for the users
@@ -21,15 +23,15 @@ i.e:  make the changes that suitable for your device
 
 ### Second:
   1. git clone https://github.com/SamyShaawat/Toys-Shop.git
-  2. Open frontend directory and write in terminal #### npm install 
-  3. Then npm start 
-  4. Open backend directory and write in terminal #### npm install 
-  5. Then npm start 
-#### Note that: npm install command install  all dependencies 
+  2. Open frontend directory and write in the terminal # npm install 
+  3. Then write: # npm start 
+  4. Open backend directory and write in terminal # npm install 
+  5. Then write: # npm start  
+#### Note that: npm install command install  all dependencies and npm start to run the files of backend and frontend
 
 
 
-### link of the website: https://whimsical-gingersnap-d57bd6.netlify.app/
+
 
 
 
