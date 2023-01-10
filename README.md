@@ -1,6 +1,6 @@
 # Toys-Shop
 ### link of the website: https://lively-parfait-a79657.netlify.app/
-#### you have to open the link on firefox browser to work properly
+#### Note: You have to open the link on firefox browser to work properly
 
 # Features of the website:
 1.	Sign up (register for new user)
