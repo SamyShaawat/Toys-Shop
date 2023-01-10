@@ -14,7 +14,7 @@
 ### First:
   1. You need to create a database on your device 
   2. There is a file name database.sql, you can get a database schema from it
-  3. You will find in backend/models/models.js: you need to chanage the host, username, password and the name of database
+  3. Go to backend/models/models.js: you need to chanage the host, username, password and the name of database
   4. Go to backend/db/connection.js : you need to chanage the host, username, password and the name of database
 i.e:  make the changes that suitable for your device 
 
