@@ -1,5 +1,5 @@
 # Toys-Shop
-### link of the website: https://whimsical-gingersnap-d57bd6.netlify.app/
+### link of the website: https://whimsical-gingersnap-d57bd6.netlify.app
 
 # Features of the website:
 1.	Sign up (register for new user)
