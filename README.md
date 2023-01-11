@@ -43,3 +43,26 @@
 3. frontend: https://www.netlify.com/
 
 
+# Screen Shots for the website:
+1. Home page without login:
+[![H7Di40g.md.png](https://iili.io/H7Di40g.md.png)](https://freeimage.host/i/H7Di40g)
+
+2. Sign up page:
+[![H7bfiMX.md.png](https://iili.io/H7bfiMX.md.png)](https://freeimage.host/i/H7bfiMX)
+
+3. Log in page: 
+[![H7bBJbp.md.png](https://iili.io/H7bBJbp.md.png)](https://freeimage.host/i/H7bBJbp)
+
+4. Home page with login:
+[![H7bC4tV.md.png](https://iili.io/H7bC4tV.md.png)](https://freeimage.host/i/H7bC4tV)
+
+5. Add Product page:
+[![H7bxzF9.md.png](https://iili.io/H7bxzF9.md.png)](https://freeimage.host/i/H7bxzF9)
+
+6. Product Details:
+[![H7b7TTF.md.png](https://iili.io/H7b7TTF.md.png)](https://freeimage.host/i/H7b7TTF) 
+
+7. Cart page:
+[![H7b01X1.md.png](https://iili.io/H7b01X1.md.png)](https://freeimage.host/i/H7b01X1)
+
+
